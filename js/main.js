@@ -1,0 +1,10 @@
+define(function(require) {
+  var carousel = require("./carousel")
+  var gotop = require("gotop")
+  var waterfall = require("waterfall")
+  var iconfont = require("iconfont")
+  var $ = require("jquery")
+  carousel.init($(".carousel"))
+  waterfall.init($(".waterfall-container"), true)
+  gotop.init($(".container"))
+})
